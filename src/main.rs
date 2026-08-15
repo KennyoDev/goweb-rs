@@ -16,7 +16,19 @@ fn main() {
         return;
     }
 
-    let url: String = process::getUrl(args[1].clone());
+    let mut getUrlIndex: usize = 1;
+
+    let mut browserNameCMD = process::getBrowserName(args[1].clone()).to_string();
+
+    //the standard is firefox
+    let mut browserKey: String = "-f".to_string();
+
+    if browserNameCMD != "-1"{
+        browserKey = args[1].clone();
+        getUrlIndex = 2;
+    }
+
+    let url: String = process::getUrl(args[getUrlIndex].clone());
 
     println!("{}", url);
 
@@ -24,7 +36,7 @@ fn main() {
         println!("This URL does not exist, consider adding it with '-n'");
     }
        
-    let mut command = process::getCommand("-f".to_string(), url);
+    let mut command = process::getCommand(browserKey, url);
 
     println!("Command: {:?}", command);
 

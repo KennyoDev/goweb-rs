@@ -33,10 +33,12 @@ pub fn getCommand(browser: String, url: String) -> Command {
 
 }
 
-fn getBrowserName(browser: String) -> String {
+pub fn getBrowserName(browser: String) -> String {
 
     match browser.as_str() {
         "-f" => return "firefox".to_string(),
+        "-c" => return "chromium".to_string(),
+        "-z" => return "zen-browser".to_string(),
         _ => "-1".to_string()
     }
 

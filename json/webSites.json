@@ -1,14 +1,13 @@
 {
-	"google":	"google.com",
-	"github":	"github.com",
-	"gitlab":	"gitlab.com",
-	"youtube":	"youtube.com",
-	"duck":	        "duckduckgo.com",
-	"guthib":	"guthib.com", 
-	"facebook":     "facebook.com",
-	"wiki":         "wikipedia.com",
-	"reddit":       "reddit.com",
-	"ai":           "chatgpt.com",
-	"x":            "x.com"
-	
+  "ai": "chatgpt.com",
+  "duck": "duckduckgo.com",
+  "facebook": "facebook.com",
+  "github": "github.com",
+  "gitlab": "gitlab.com",
+  "google": "google.com",
+  "guthib": "guthib.com",
+  "reddit": "reddit.com",
+  "wiki": "wikipedia.com",
+  "x": "x.com",
+  "youtube": "youtube.com"
 }
